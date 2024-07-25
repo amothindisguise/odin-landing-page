@@ -1,3 +1,5 @@
+/*Return after few days/weeks to improve/clean the code*/
+
 * {
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -5,20 +7,20 @@
 
 body {
     margin: 0;
-    padding: 0;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    font-family: 'Roboto', sans-serif;
 }
+
+/*Start of .header*/
 
 .header {
     background-color: #1F2937;
     color: #E5E7EB;
-    font-family: Roboto, sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 32px;
+    padding: 0 60px;
     position: fixed;
     width: 100%;
 }
@@ -29,26 +31,48 @@ body {
     font-weight: 800;
 }
 
-.link-one {
+ul {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    list-style-type: none;
+    font-size: 18px;
+    gap: 24px;
+}
+
+a {
+    text-decoration: none;
+    color: #E5E7EB;
+}
+
+.navi a:hover {
+    color: #7ca0e9;
+}
+
+/*start of .home*/
+
+.home {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;   
     background-color: #1F2937;
-    padding: 0 32px;
+    padding: 0 60px;
     height: 100vh;
+}
+
+.main-text {
+    width: 50%;
+    padding-right: 50px;
 }
 
 .headline {
     font-size: 48px;
-    font-weight: 800;
+    font-weight: 900;
     color: #F9FAF8;
-    font-family: 'Hero Main Text', sans-serif;
 }
 
 .supporting-copy {
     font-size: 18px;
-    font-family: 'Hero Secondary Text', sans-serif;
     color: #E5E7EB;
+    padding: 10px 0;
 }
 
 .img-banner {
@@ -58,14 +82,116 @@ body {
     width: 100vh;
 }
 
-img {
+.img-banner img {
     width: 100%;
+    border-radius: 10px;
 }
 
-.supporting-copy {
-    padding: 10px 0;
+.home button {
+    background-color: #3882F6;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 18px;
 }
 
+/*Start of .link-one*/
+
+.link-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 60px;
+    height: 100vh;
+}
+
+.featured-text {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937;
+    padding: 50px;
+}
+
+.img-container {
+    text-align: center;
+    width: 300px;
+}
+
+.product-img {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.product-img-1 {
+    border: 4px solid #3882F6;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+/*Start of .link-two*/
+
+.link-two {
+    height: 100vh;
+    background-color: #E5E7EB;
+    padding: 0 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-text {
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+}
+
+.quote {
+    font-weight: 800;
+    margin-left: auto;
+    font-size: 18px;
+}
+
+/*Start of .link-three*/
+.link-three {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.container {
+    background-color: #3882F6;
+    padding: 0 150px;
+    width: 1000px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.cta-heading {
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.link-three button {
+    background-color: #3882F6;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px 32px;
+    font-size: 18px;
+    color: white;
+}
+
+/*Start of .footer*/
 .footer {
     display: flex;
     justify-content: center;
@@ -73,53 +199,6 @@ img {
     background-color: #1F2937;
     font-size: 18px;
     color: #E5E7EB;
-    font-family: 'Roboto', sans-serif;
     margin-top: auto;
     padding: 20px;
-}
-
-ul {
-    display: flex;
-    list-style-type: none;
-    font-size: 18px;
-}
-
-li {
-    padding: 10px;
-}
-
-a {
-    text-decoration: none;
-    color: #E5E7EB;
-}
-
-.link-two {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 0 32px;
-    height: 100vh;
-}
-
-.product-img {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.product-img-1,
-.product-img-2,
-.product-img-3,
-.product-img-4 {
-    border: 2px solid blue;
-    width: 100px;
-    height: 100px;
-    border-radius: 20px;
-}
-
-.link-three {
-    height: 100vh;
-    background-color: #E5E7EB;
-    padding: 0 32px;
 }
