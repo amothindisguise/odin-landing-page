@@ -8,79 +8,73 @@
 </head>
 <body>
     <!--Start of Header-->
-    <div class="header">
-        <div class="logo"><a href="#">Header Logo</a></div> <!--Change to img-->
-        <nav class="navi">
-            <a href="#link-one">Header Link One</a>
-            <a href="#link-two">Header Link Two</a>
-            <a href="#link-three">Header Link Three</a>
-        </nav>
+    <header>
+        <div class="header">
+            <div class="logo"><a href="#">Header Logo</a></div> <!--Change to img-->
+            <nav class="navi">
+                <ul>
+                    <li><a href="#link-one">Header Link One</a></li>
+                    <li><a href="#link-two">Header Link Two</a></li>
+                    <li><a href="#link-three">Header Link Three</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="section hero">
+        <div class="text-heading">
+            <p class="text-main">This website is awesome.</p>
+            <p class="text-secondary">This website has some subtext that goes under the main title. It's a smaller font and the color is lower contrast</p>
+            <button class="hero-button">Sign up</button>
+        </div>
+        <div class="image-container">
+            <img src="./images/banner.jpg" alt="Image Container">
+        </div>
     </div>
 
-    <!--Start of Home-->
-    <div class="home">
-        <div class="main-text">
-            <div class="headline">Lorem ipsum odor amet.</div>
-            <div class="supporting-copy">Lorem ipsum odor amet, consectetuer adipiscing elit. Convallis morbi laoreet tincidunt justo rutrum efficitur convallis.</div>
-            <button>Learn more</button>
+    <div class="section additional-info" id="link-one">
+        <div class="title-additional">
+            <p>Some random information</p>
         </div>
-        <div class="img-banner">
-            <img src="./images/banner.jpg">
-        </div>
-    </div>
-
-    <!--Start of Header Link One-->
-    <!--Change the .product-img-1 to img-->
-    <div class="link-one" id="link-one">
-        <div class="featured-text">Some random information.</div>
-        <div class="product-img">
-            <div class="img-container">
-                <div class="product-img-1"></div>
-                <p>
-                    This is some subtext under an illustration or image
-                </p>
+        <div class="product-container">
+            <div class="wrap">
+                <div class="product-image"></div>
+                <p class="product-description">This is some subtext under an illustration or image</p>
             </div>
-            <div class="img-container">
-                <div class="product-img-1"></div>
-                <p>
-                    This is some subtext under an illustration or image
-                </p>
+            <div class="wrap">
+                <div class="product-image"></div>
+                <p class="product-description">This is some subtext under an illustration or image</p>
             </div>
-            <div class="img-container">
-                <div class="product-img-1"></div>
-                <p>
-                    This is some subtext under an illustration or image
-                </p>
+            <div class="wrap">    
+                <div class="product-image"></div>
+                <p class="product-description">This is some subtext under an illustration or image</p>
             </div>
-            <div class="img-container">
-                <div class="product-img-1"></div>
-                <p>
-                    This is some subtext under an illustration or image
-                </p>
+            <div class="wrap">
+                <div class="product-image"></div>
+                <p class="product-description">This is some subtext under an illustration or image</p>
             </div>
         </div>
     </div>
 
-    <!--Start of Header Link Two-->
-    <div class="link-two" id="link-two">
-        <div class="quote-text">This is an inspiring quote, or a testimonial from a customer. Maybe it's filling up space, or maybe people will actually read it. Who knows? All I know is that it looks nice.</div>
-        <div class="quote">-Thor, God of Thunder</div>
+    <div class="section quotes-section" id="link-two">
+        <p class="quotes">This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All I know is that it looks nice.</p>
+        <p class="quoted-from">-Thor, God of Thunder</p>
     </div>
 
-    <!--Start of Header Link Three-->
-    <div class="link-three" id="link-three">
-        <div class="container">
-            <div class="text">
-                <div class="cta-heading">Call to action! It's time!</div>
-                <div class="cta-text">Sign up for our product by clicking that button rignt over there!</div>
+    <div class="section call-to-action" id="link-three">
+        <div class="cta-container">
+            <div class="cta-text">
+                <p class="cta-headline">Call to action! It's time!</p>
+                <p class="cta-subtext">Sign up for our product by clicking that button right over there!</p>
             </div>
-            <button class="signup">Sign up</button>
+            <div class="cta-button">
+                <button class="cta-button">Sign up</button>
+            </div>
         </div>
     </div>
 
-    <!--Start of Footer-->
-    <div class="footer">
+    <footer>
         Copyright © amothindisguise 2024
-    </div>
+    </footer>
 </body>
 </html>
